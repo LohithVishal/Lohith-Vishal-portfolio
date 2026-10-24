@@ -5,633 +5,656 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="theme-color" content="#080a08">
-  <meta name="description" content="Lohith Vishal — Embedded Systems and IoT, technical support, and digital media portfolio.">
-  <title>Lohith Vishal | Engineer & Creator</title>
 
+  <title>Lohith Vishal | Embedded Systems & Technical Support</title>
+
+  <meta
+    name="description"
+    content="Lohith Vishal — Embedded Systems and IoT, Technical Support, Customer Experience and Digital Media."
+  >
+
+  <!-- Keep your existing styles unchanged -->
+  <link rel="stylesheet" href="style.css">
+
+  <!-- Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="style.css">
+  <link
+    href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=DM+Sans:wght@400;500;600;700&family=Space+Mono:wght@400;700&display=swap"
+    rel="stylesheet"
+  >
 </head>
-<body>
-  <div class="noise" aria-hidden="true"></div>
-  <div class="cursor-glow" aria-hidden="true"></div>
 
+<body>
+  <div class="ambient" aria-hidden="true"></div>
+  <div class="page-grid" aria-hidden="true"></div>
+
+  <!-- HEADER -->
   <header class="site-header">
     <a class="brand" href="#home" aria-label="Lohith Vishal home">
-      <span class="brand-mark">LV</span>
-      <span>LOHITH<span class="accent">.</span></span>
+      <span class="brand-symbol">LV<span></span></span>
+      <span>LOHITH VISHAL</span>
     </a>
 
-    <button class="menu-toggle" id="menuToggle" aria-label="Open navigation"
-      aria-expanded="false" aria-controls="mainNav">
-      <span></span><span></span>
+    <button
+      class="menu-toggle"
+      type="button"
+      aria-label="Toggle navigation"
+      aria-expanded="false"
+      aria-controls="main-navigation"
+    >
+      <span></span>
+      <span></span>
     </button>
 
-    <nav class="nav" id="mainNav">
-      <a href="#about">About</a>
-      <a href="#experience">Experience</a>
-      <a href="#projects">Projects</a>
-      <a href="#skills">Skills</a>
-      <a class="nav-contact" href="#contact">Let's talk <span>↗</span></a>
+    <nav class="main-nav" id="main-navigation" aria-label="Main navigation">
+      <a href="#about">ABOUT</a>
+      <a href="#experience">EXPERIENCE</a>
+      <a href="#skills">SKILLS</a>
+      <a href="#projects">PROJECTS</a>
+      <a href="#education">EDUCATION</a>
+      <a class="nav-contact" href="#contact">
+        LET'S CONNECT <span>↗</span>
+      </a>
     </nav>
   </header>
 
   <main>
+    <!-- HERO -->
     <section class="hero section-shell" id="home">
       <div class="hero-copy reveal">
-        <div class="availability">
-          <span class="status-dot"></span>
-          ENGINEERING · SUPPORT · CREATIVE
-        </div>
+        <p class="eyebrow">
+          <span class="live-dot"></span>
+          ENGINEERING / TECHNOLOGY / CREATIVITY
+        </p>
 
-        <p class="eyebrow">HELLO, I'M</p>
-        <h1>Lohith<br><span class="outline-text">Vishal.</span></h1>
+        <h1>
+          LOHITH<br>
+          <span>VISHAL.</span>
+        </h1>
+
+        <p class="hero-role">
+          EMBEDDED SYSTEMS &amp; IoT
+          <i>|</i>
+          TECHNICAL SUPPORT
+          <i>|</i>
+          DIGITAL MEDIA
+        </p>
 
         <p class="hero-description">
-          I build with technology, solve problems, and turn technical ideas
-          into experiences people can understand.
+          Building solutions. Solving problems. Creating impact.
+          Exploring embedded technology, helping customers solve problems,
+          and creating meaningful digital content.
         </p>
-
-        <div class="hero-tags">
-          <span>Embedded Systems</span>
-          <span>IoT</span>
-          <span>Technical Support</span>
-          <span>Digital Media</span>
-        </div>
 
         <div class="hero-actions">
-          <a class="button button-primary" href="#projects">
-            Explore my work <span>↘</span>
+          <a class="button button-primary" href="#experience">
+            Explore my experience <span>↘</span>
           </a>
-          <a class="button button-ghost" href="#contact">Get in touch ↗</a>
+
+          <a class="button button-secondary" href="#contact">
+            Get in touch <span>↗</span>
+          </a>
         </div>
 
-        <div class="hero-location">
-          <span class="location-icon">⌖</span>
-          Bengaluru, India
-          <span class="location-divider">/</span>
-          <span class="mono">OPEN TO OPPORTUNITIES</span>
-        </div>
+        <p class="hero-location">
+          <span class="live-dot"></span>
+          BASED IN BENGALURU, INDIA
+        </p>
       </div>
 
-      <div class="hero-art reveal" aria-label="Animated embedded systems inspired illustration">
-        <div class="art-topline">
-          <span>FIG. 001 — SYSTEM OVERVIEW</span>
-          <span class="live-label"><span class="status-dot"></span> LIVE</span>
+      <!-- Decorative technology visual; no external images required -->
+      <div class="hero-visual reveal" aria-label="Embedded systems visual">
+        <div class="visual-top">
+          <span>HARDWARE / SOFTWARE</span>
+          <span>SYS.001 — ONLINE</span>
         </div>
 
-        <div class="orbit orbit-one"></div>
-        <div class="orbit orbit-two"></div>
-        <div class="orbit orbit-three"></div>
+        <div class="chip-visual">
+          <div class="chip-pins"></div>
 
-        <svg class="circuit-lines" viewBox="0 0 500 500" aria-hidden="true">
-          <g fill="none" stroke="currentColor" stroke-width="1">
-            <path d="M20 120 H90 V160 H145"/>
-            <path d="M355 90 H410 V145 H470"/>
-            <path d="M25 355 H90 V320 H145"/>
-            <path d="M355 340 H420 V385 H480"/>
-            <path d="M250 15 V65"/>
-            <path d="M250 435 V485"/>
-            <path d="M15 250 H65"/>
-            <path d="M435 250 H485"/>
-          </g>
-          <g fill="#c4ff4d">
-            <circle cx="90" cy="120" r="3"/>
-            <circle cx="410" cy="90" r="3"/>
-            <circle cx="90" cy="355" r="3"/>
-            <circle cx="420" cy="340" r="3"/>
-            <circle cx="250" cy="65" r="3"/>
-            <circle cx="250" cy="435" r="3"/>
-          </g>
-        </svg>
-
-        <div class="chip">
-          <div class="chip-pins chip-pins-top"></div>
-          <div class="chip-pins chip-pins-bottom"></div>
           <div class="chip-inner">
-            <div class="chip-symbol">LV<span>_</span></div>
-            <div class="chip-label">BUILD · TEST · REPEAT</div>
-            <div class="chip-core">
-              <span></span><span></span><span></span>
-              <span></span><span></span><span></span>
-              <span></span><span></span><span></span>
-            </div>
-            <div class="chip-type">ESP / IoT / CODE</div>
+            <span class="chip-brand">ESP</span>
+            <strong>32</strong>
+            <span class="chip-caption">WIRELESS MICROCONTROLLER</span>
+            <div class="chip-circuit"></div>
           </div>
         </div>
 
-        <div class="float-card float-card-top">
-          <span class="float-icon">⌘</span>
-          <span><strong>Curious mind</strong><small>Always learning</small></span>
-        </div>
-
-        <div class="float-card float-card-bottom">
-          <span class="float-icon green-icon">↗</span>
-          <span><strong>Ideas to reality</strong><small>One project at a time</small></span>
-        </div>
-
-        <div class="art-coordinates mono">12°58' N<br>77°35' E</div>
-        <div class="art-index mono">LV / 2026</div>
-      </div>
-
-      <div class="hero-bottomline">
-        <span>SCROLL TO EXPLORE</span>
-        <span class="scroll-line"></span>
-        <span class="mono">01 — 05</span>
-      </div>
-    </section>
-
-    <section class="intro-strip">
-      <div class="strip-track">
-        <span>ENGINEERING <i>✳</i></span>
-        <span>PROBLEM SOLVING <i>✳</i></span>
-        <span>INNOVATION <i>✳</i></span>
-        <span>CREATIVE THINKING <i>✳</i></span>
-        <span>ENGINEERING <i>✳</i></span>
-        <span>PROBLEM SOLVING <i>✳</i></span>
-        <span>INNOVATION <i>✳</i></span>
-        <span>CREATIVE THINKING <i>✳</i></span>
-      </div>
-    </section>
-
-    <section class="section-shell section-padding" id="about">
-      <div class="section-heading reveal">
-        <p class="eyebrow">01 / ABOUT ME</p>
-        <h2>Different skills.<br><span class="muted">One curious mind.</span></h2>
-      </div>
-
-      <div class="about-grid">
-        <div class="about-main reveal">
-          <p class="large-copy">
-            I'm interested in what happens when <span class="accent">technology,
-            people, and creativity</span> come together.
-          </p>
-          <p>
-            My experience spans embedded systems and IoT experimentation,
-            customer-facing technical support, and digital content creation.
-            I enjoy understanding how things work, troubleshooting problems,
-            and communicating solutions clearly.
-          </p>
-          <p>
-            Whether I'm working with a microcontroller, helping a customer
-            through a technical issue, or creating content, my approach is the
-            same: stay curious, think logically, and keep improving.
-          </p>
-          <a class="text-link" href="#contact">Have a project in mind? <span>↗</span></a>
-        </div>
-
-        <div class="about-side reveal">
-          <div class="info-card">
-            <span class="info-number">01</span>
-            <div>
-              <h3>Engineer</h3>
-              <p>Embedded systems, microcontrollers, sensors, and connected devices.</p>
-            </div>
-            <span class="info-arrow">↗</span>
-          </div>
-          <div class="info-card">
-            <span class="info-number">02</span>
-            <div>
-              <h3>Problem solver</h3>
-              <p>Customer support, technical guidance, troubleshooting, and communication.</p>
-            </div>
-            <span class="info-arrow">↗</span>
-          </div>
-          <div class="info-card">
-            <span class="info-number">03</span>
-            <div>
-              <h3>Creator</h3>
-              <p>Technical storytelling, social media content, promotional visuals, and ideas.</p>
-            </div>
-            <span class="info-arrow">↗</span>
-          </div>
-
-          <div class="education-card">
-            <span class="eyebrow">EDUCATION</span>
-            <h3>B.Sc. — Physics, Mathematics & Electronics</h3>
-            <p>Kristu Jayanti College, Bengaluru</p>
-            <span class="education-note">Academic background in science and electronics</span>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <section class="dark-section section-padding" id="experience">
-      <div class="section-shell">
-        <div class="section-heading reveal">
-          <p class="eyebrow">02 / EXPERIENCE</p>
-          <h2>Where I've<br><span class="muted">made an impact.</span></h2>
-          <p class="heading-description">
-            A combination of customer-facing operations, technical problem solving,
-            and hands-on engineering.
-          </p>
-        </div>
-
-        <div class="timeline">
-          <article class="timeline-item reveal">
-            <div class="timeline-marker"><span></span></div>
-            <div class="timeline-date mono">MAR 2025 — PRESENT</div>
-            <div class="timeline-content">
-              <div class="experience-top">
-                <div>
-                  <h3>247.ai</h3>
-                  <p class="role">Customer Experience Support · Technical Support</p>
-                </div>
-                <span class="experience-type">CUSTOMER OPERATIONS</span>
-              </div>
-              <p class="experience-summary">
-                Supporting customers in the Best Buy international process through
-                chat and email, with a focus on product guidance, order concerns,
-                and technical troubleshooting.
-              </p>
-              <ul class="experience-list">
-                <li>Assist customers with product information, purchasing decisions, orders, and promotions.</li>
-                <li>Guide customers through troubleshooting steps and explain technical information clearly.</li>
-                <li>Handle customer concerns professionally while following process, quality, and compliance requirements.</li>
-                <li>Contribute creative ideas and promotional content with the media team.</li>
-              </ul>
-              <div class="tag-row">
-                <span>Live Chat</span><span>Email Support</span><span>Troubleshooting</span>
-                <span>Customer Experience</span><span>Digital Media</span>
-              </div>
-            </div>
-          </article>
-
-          <article class="timeline-item reveal">
-            <div class="timeline-marker"><span></span></div>
-            <div class="timeline-date mono">2023 — 2024*</div>
-            <div class="timeline-content">
-              <div class="experience-top">
-                <div>
-                  <h3>TIF LABS</h3>
-                  <p class="role">Embedded Systems & IoT · Content Creation</p>
-                </div>
-                <span class="experience-type">ENGINEERING / MEDIA</span>
-              </div>
-              <p class="experience-summary">
-                Explored microcontroller-based projects while contributing to
-                technical documentation and digital content.
-              </p>
-              <ul class="experience-list">
-                <li>Worked with ESP32, ESP8266, Raspberry Pi, sensors, and actuators.</li>
-                <li>Explored IoT communication and platforms including MQTT, Blynk, BLE, and NFC.</li>
-                <li>Assisted with circuit troubleshooting, technical documentation, and project demonstrations.</li>
-                <li>Created technical blogs, product videos, reels, and social media content.</li>
-              </ul>
-              <div class="tag-row">
-                <span>ESP32</span><span>Raspberry Pi</span><span>MQTT</span>
-                <span>IoT</span><span>Technical Writing</span><span>Content Strategy</span>
-              </div>
-              <p class="date-note">*Confirm the exact employment/internship dates before publishing.</p>
-            </div>
-          </article>
-        </div>
-      </div>
-    </section>
-
-    <section class="section-shell section-padding" id="projects">
-      <div class="section-heading reveal">
-        <p class="eyebrow">03 / SELECTED WORK</p>
-        <h2>Built from curiosity.<br><span class="muted">Driven by ideas.</span></h2>
-        <p class="heading-description">
-          A selection of project concepts and technical areas I work with.
-          Add repository links and photos as your projects are published.
-        </p>
-      </div>
-
-      <div class="projects-grid">
-        <article class="project-card project-featured reveal">
-          <div class="project-visual visual-oled">
-            <div class="visual-label mono">PROJECT / 001</div>
-            <div class="oled-device">
-              <div class="oled-screen">
-                <span class="oled-small">SYSTEM ONLINE</span>
-                <strong>HELLO,<br>WORLD<span class="blink">_</span></strong>
-                <div class="oled-progress"><span></span></div>
-                <span class="oled-footer">ESP32 · OLED · I2C</span>
-              </div>
-              <div class="oled-board"></div>
-            </div>
-            <span class="visual-corner">01</span>
-          </div>
-          <div class="project-content">
-            <div class="project-meta"><span>EMBEDDED SYSTEMS</span><span>01 / 04</span></div>
-            <h3>ESP32 Smart Display</h3>
-            <p>
-              A microcontroller-based display concept combining an ESP32,
-              an OLED screen, and real-time information presentation.
-            </p>
-            <div class="tag-row"><span>ESP32</span><span>Arduino</span><span>I²C</span><span>OLED</span></div>
-            <a class="project-link" href="#contact">Discuss this project <span>↗</span></a>
-          </div>
-        </article>
-
-        <article class="project-card reveal">
-          <div class="project-visual visual-iot">
-            <div class="visual-label mono">PROJECT / 002</div>
-            <div class="iot-node node-a">SENSOR<span>01</span></div>
-            <div class="iot-node node-b">ESP32<span>MCU</span></div>
-            <div class="iot-node node-c">CLOUD<span>MQTT</span></div>
-            <svg class="iot-connectors" viewBox="0 0 400 250" aria-hidden="true">
-              <path d="M90 125 H155 M245 125 H310" fill="none" stroke="currentColor" stroke-dasharray="5 5" stroke-width="2"/>
-              <circle cx="155" cy="125" r="4" fill="#c4ff4d"/>
-              <circle cx="245" cy="125" r="4" fill="#c4ff4d"/>
-            </svg>
-            <span class="visual-corner">02</span>
-          </div>
-          <div class="project-content">
-            <div class="project-meta"><span>INTERNET OF THINGS</span><span>02 / 04</span></div>
-            <h3>Connected IoT Monitoring</h3>
-            <p>
-              Exploring sensor data collection and connected-device communication
-              using MQTT and IoT platforms.
-            </p>
-            <div class="tag-row"><span>MQTT</span><span>ESP8266</span><span>Blynk</span></div>
-            <a class="project-link" href="#contact">Discuss this project <span>↗</span></a>
-          </div>
-        </article>
-
-        <article class="project-card reveal">
-          <div class="project-visual visual-assistant">
-            <div class="visual-label mono">PROJECT / 003</div>
-            <div class="assistant-ring">
-              <div class="assistant-ring-inner">
-                <span class="assistant-wave"></span>
-                <span class="assistant-wave"></span>
-                <span class="assistant-wave"></span>
-                <span class="assistant-wave"></span>
-                <span class="assistant-wave"></span>
-              </div>
-            </div>
-            <div class="assistant-caption mono">VOICE · AI · HARDWARE</div>
-            <span class="visual-corner">03</span>
-          </div>
-          <div class="project-content">
-            <div class="project-meta"><span>AI / HARDWARE</span><span>03 / 04</span></div>
-            <h3>ESP32 AI Assistant Concept</h3>
-            <p>
-              A prototype concept connecting an ESP32, an OLED interface,
-              an AI response service, and Bluetooth audio output.
-            </p>
-            <div class="tag-row"><span>ESP32</span><span>Wi-Fi</span><span>API</span><span>Bluetooth</span></div>
-            <a class="project-link" href="#contact">Discuss this project <span>↗</span></a>
-          </div>
-        </article>
-
-        <article class="project-card reveal">
-          <div class="project-visual visual-creative">
-            <div class="visual-label mono">PROJECT / 004</div>
-            <div class="creative-stack">
-              <div class="creative-sheet sheet-back">IDEAS<br>INTO<br>STORIES.</div>
-              <div class="creative-sheet sheet-front">
-                <span>CONTENT / MEDIA</span>
-                <strong>CREATE<br><i>IMPACT.</i></strong>
-                <span class="creative-line"></span>
-              </div>
-            </div>
-            <span class="visual-corner">04</span>
-          </div>
-          <div class="project-content">
-            <div class="project-meta"><span>DIGITAL MEDIA</span><span>04 / 04</span></div>
-            <h3>Technical Content & Campaigns</h3>
-            <p>
-              Technical storytelling through blogs, product demonstrations,
-              short-form videos, posters, and promotional content.
-            </p>
-            <div class="tag-row"><span>Content</span><span>Social Media</span><span>Campaigns</span></div>
-            <a class="project-link" href="#contact">Discuss creative work <span>↗</span></a>
-          </div>
-        </article>
-      </div>
-      <p class="projects-note">Project cards describe work areas and concepts. Replace or supplement them with verified completed projects, photos, and live repository links.</p>
-    </section>
-
-    
-<section class="dark-section section-padding" id="experience">
-  <div class="section-shell">
-
-    <div class="section-heading reveal">
-      <p class="eyebrow">02 / CAREER JOURNEY</p>
-      <h2>Experience that<br><span class="muted">moves me forward.</span></h2>
-      <p class="heading-description">
-        From hands-on engineering and IoT to customer experience,
-        sales support, and technical troubleshooting.
-      </p>
-    </div>
-
-    <div class="career-grid">
-
-      <!-- 01: TIF LABS -->
-      <article class="career-card reveal">
-        <div class="career-card-top">
-          <span class="career-number">01</span>
-          <span class="career-status">ENGINEERING / MEDIA</span>
-        </div>
-
-        <p class="career-period">NOV 2023 — 2024*</p>
-        <h3>TIF LABS</h3>
-        <p class="career-role">Embedded Systems & IoT</p>
-
-        <p class="career-description">
-          Explored embedded hardware and connected-device projects while
-          creating technical documentation and digital content.
-        </p>
-
-        <ul class="career-points">
-          <li>Developed and experimented with ESP32, ESP8266, and Raspberry Pi.</li>
-          <li>Worked with sensors, actuators, MQTT, Blynk, BLE, and NFC.</li>
-          <li>Supported circuit troubleshooting and project demonstrations.</li>
-          <li>Created technical blogs, product videos, and social media content.</li>
-        </ul>
-
-        <div class="career-tags">
-          <span>ESP32</span>
-          <span>Raspberry Pi</span>
-          <span>MQTT</span>
-          <span>IoT</span>
-        </div>
-
-        <div class="career-footer">
-          <span>01 / ENGINEERING</span>
-          <span class="career-arrow">↗</span>
-        </div>
-      </article>
-
-      <!-- 02: 247.AI SALES -->
-      <article class="career-card reveal">
-        <div class="career-card-top">
-          <span class="career-number">02</span>
-          <span class="career-status">SALES OPERATIONS</span>
-        </div>
-
-        <p class="career-period">MAR 2025 — JAN 2026</p>
-        <h3>247.ai</h3>
-        <p class="career-role">Customer Experience Support · Sales</p>
-
-        <p class="career-description">
-          Supported customers in the Best Buy international sales process
-          through live chat and email, helping them make informed
-          purchasing decisions.
-        </p>
-
-        <ul class="career-points">
-          <li>Explained product features and helped customers choose products.</li>
-          <li>Handled order queries, availability, and promotions.</li>
-          <li>Clarified pricing, offers, and relevant sales policies.</li>
-          <li>Maintained quality, compliance, and professional communication.</li>
-        </ul>
-
-        <div class="career-tags">
-          <span>Live Chat</span>
-          <span>Email</span>
-          <span>Sales Support</span>
-          <span>Best Buy</span>
-        </div>
-
-        <div class="career-footer">
-          <span>02 / CUSTOMER EXPERIENCE</span>
-          <span class="career-arrow">↗</span>
-        </div>
-      </article>
-
-      <!-- 03: 247.AI TECHNICAL SUPPORT -->
-      <article class="career-card career-current reveal">
-        <div class="career-card-top">
-          <span class="career-number">03</span>
-          <span class="career-status current-status">
-            <span class="status-dot"></span> CURRENT ROLE
+        <div class="visual-node node-one">
+          <span class="node-icon">⌘</span>
+          <span>
+            <b>EMBEDDED</b>
+            <small>Microcontrollers</small>
           </span>
         </div>
 
-        <p class="career-period">JAN 2026 — PRESENT</p>
-        <h3>247.ai</h3>
-        <p class="career-role">Technical Support · Best Buy Process</p>
+        <div class="visual-node node-two">
+          <span class="node-icon">⌁</span>
+          <span>
+            <b>IoT SYSTEMS</b>
+            <small>Connected devices</small>
+          </span>
+        </div>
 
-        <p class="career-description">
-          Assist customers with technical concerns through structured
-          troubleshooting, clear instructions, and remote guidance.
+        <div class="visual-node node-three">
+          <span class="node-icon">↗</span>
+          <span>
+            <b>TECH SUPPORT</b>
+            <small>Problem solving</small>
+          </span>
+        </div>
+
+        <span class="visual-index mono">FIG 01 / LV SYSTEMS</span>
+      </div>
+
+      <div class="hero-bottom">
+        <span>ENGINEERED WITH CURIOSITY</span>
+        <span>SCROLL TO EXPLORE <span class="scroll-line"></span></span>
+      </div>
+    </section>
+
+    <!-- ABOUT -->
+    <section class="content-section section-shell" id="about">
+      <div class="section-heading reveal">
+        <p class="section-label">01 / ABOUT ME</p>
+        <h2>
+          Technology with purpose.<br>
+          <span class="muted">People at the centre.</span>
+        </h2>
+        <p class="heading-description">
+          An interdisciplinary profile combining electronics, customer
+          experience, technical troubleshooting and digital creativity.
         </p>
+      </div>
 
-        <ul class="career-points">
-          <li>Guide customers through troubleshooting steps.</li>
-          <li>Ask diagnostic questions to identify reported issues.</li>
-          <li>Explain technical solutions in customer-friendly language.</li>
-          <li>Follow service quality and compliance requirements.</li>
-        </ul>
+      <div class="about-layout">
+        <div class="reveal">
+          <p class="large-copy">
+            I enjoy understanding how things work, solving real-world
+            problems, and turning technical ideas into practical solutions.
+          </p>
 
-        <div class="career-tags">
-          <span>Technical Support</span>
-          <span>Troubleshooting</span>
-          <span>Remote Assistance</span>
-          <span>Problem Solving</span>
+          <p class="body-copy">
+            My experience spans embedded systems and IoT projects, customer
+            support for an international sales process, technical assistance,
+            and digital content creation. I bring together analytical
+            thinking, clear communication and a hands-on approach to learning.
+          </p>
         </div>
 
-        <div class="career-footer">
-          <span>03 / TECHNICAL SUPPORT</span>
-          <span class="career-arrow">↗</span>
+        <div class="about-facts reveal">
+          <div class="fact-row">
+            <span>01</span>
+            <div>
+              <b>Embedded Systems</b>
+              <small>Microcontrollers, electronics and IoT</small>
+            </div>
+          </div>
+
+          <div class="fact-row">
+            <span>02</span>
+            <div>
+              <b>Customer Experience</b>
+              <small>Sales support and technical assistance</small>
+            </div>
+          </div>
+
+          <div class="fact-row">
+            <span>03</span>
+            <div>
+              <b>Digital Media</b>
+              <small>Content creation and social media</small>
+            </div>
+          </div>
+
+          <div class="fact-row">
+            <span>04</span>
+            <div>
+              <b>Continuous Learning</b>
+              <small>Building, testing and improving</small>
+            </div>
+          </div>
         </div>
+      </div>
+    </section>
+
+    <!-- EXPERIENCE -->
+    <section class="content-section section-shell" id="experience">
+      <div class="section-heading reveal">
+        <p class="section-label">02 / CAREER TIMELINE</p>
+        <h2>
+          Experience in motion.<br>
+          <span class="muted">Three chapters.</span>
+        </h2>
+        <p class="heading-description">
+          From embedded systems and content creation to customer-facing sales
+          support and technical troubleshooting.
+        </p>
+      </div>
+
+      <div class="career-grid">
+
+        <!-- EXPERIENCE 01: TIF LABS -->
+        <article class="career-card reveal">
+          <div class="career-card-top">
+            <span class="career-number">01 / EXPERIENCE</span>
+            <span class="career-status">ENGINEERING / MEDIA</span>
+          </div>
+
+          <p class="career-period">2023 – 2024*</p>
+
+          <h3>TIF LABS</h3>
+
+          <p class="career-role">
+            Embedded Systems &amp; IoT · Technical Content
+          </p>
+
+          <p class="career-description">
+            Worked with microcontroller-based projects while contributing to
+            technical documentation, demonstrations and digital content.
+          </p>
+
+          <ul class="career-points">
+            <li>Worked with ESP32, ESP8266, Raspberry Pi, sensors and actuators.</li>
+            <li>Explored IoT communication using MQTT, Blynk, BLE and NFC.</li>
+            <li>Assisted with circuit troubleshooting and project demonstrations.</li>
+            <li>Created technical blogs, product videos, reels and social media content.</li>
+          </ul>
+
+          <div class="career-tags">
+            <span>ESP32</span>
+            <span>Raspberry Pi</span>
+            <span>MQTT</span>
+            <span>IoT</span>
+            <span>Technical Writing</span>
+            <span>Content Strategy</span>
+          </div>
+
+          <div class="career-footer">
+            <span>FOUNDATION / BUILD</span>
+            <span>↗</span>
+          </div>
+        </article>
+
+        <!-- EXPERIENCE 02: 247.AI SALES SUPPORT -->
+        <article class="career-card reveal">
+          <div class="career-card-top">
+            <span class="career-number">02 / EXPERIENCE</span>
+            <span class="career-status">SALES OPERATIONS</span>
+          </div>
+
+          <p class="career-period">MAR 2025 – JAN 2026</p>
+
+          <h3>247.ai</h3>
+
+          <p class="career-role">
+            Customer Experience Support · Sales
+          </p>
+
+          <p class="career-description">
+            Supported customers in the Best Buy international sales process
+            through live chat and email, helping them make informed purchasing
+            decisions and resolve sales-related concerns.
+          </p>
+
+          <ul class="career-points">
+            <li>Assisted customers with product information, features and purchase decisions.</li>
+            <li>Handled order-related queries, product availability and promotional questions.</li>
+            <li>Helped customers understand pricing, offers and relevant sales policies.</li>
+            <li>Maintained professional written communication while following quality and compliance standards.</li>
+          </ul>
+
+          <div class="career-tags">
+            <span>Live Chat</span>
+            <span>Email Support</span>
+            <span>Sales Support</span>
+            <span>Product Knowledge</span>
+            <span>Best Buy</span>
+            <span>Customer Experience</span>
+          </div>
+
+          <div class="career-footer">
+            <span>CHAPTER / CUSTOMER EXPERIENCE</span>
+            <span>↗</span>
+          </div>
+        </article>
+
+        <!-- EXPERIENCE 03: 247.AI TECHNICAL SUPPORT -->
+        <article class="career-card career-current reveal">
+          <div class="career-card-top">
+            <span class="career-number">03 / EXPERIENCE</span>
+            <span class="career-status current-status">
+              <span class="live-dot"></span>
+              CURRENT
+            </span>
+          </div>
+
+          <p class="career-period">JAN 2026 – PRESENT</p>
+
+          <h3>247.ai</h3>
+
+          <p class="career-role">
+            Technical Support · Best Buy Process
+          </p>
+
+          <p class="career-description">
+            Supporting customers with technical concerns through clear,
+            structured troubleshooting and remote guidance within the
+            Best Buy customer support process.
+          </p>
+
+          <ul class="career-points">
+            <li>Guide customers through troubleshooting steps to identify and resolve technical issues.</li>
+            <li>Explain technical instructions in a clear, customer-friendly manner.</li>
+            <li>Ask relevant diagnostic questions to understand reported problems.</li>
+            <li>Maintain accurate communication and follow process, quality and compliance requirements.</li>
+          </ul>
+
+          <div class="career-tags">
+            <span>Technical Support</span>
+            <span>Troubleshooting</span>
+            <span>Remote Assistance</span>
+            <span>Problem Solving</span>
+            <span>Customer Communication</span>
+          </div>
+
+          <div class="career-footer">
+            <span>CHAPTER / TECHNICAL SUPPORT</span>
+            <span>↗</span>
+          </div>
+        </article>
+
+      </div>
+
+      <p class="career-note">
+        *Confirm the exact TIF LABS dates before publishing. The timeline
+        reflects the dates currently provided.
+      </p>
+    </section>
+
+    <!-- SKILLS -->
+    <section class="content-section section-shell" id="skills">
+      <div class="section-heading reveal">
+        <p class="section-label">03 / CAPABILITIES</p>
+        <h2>
+          A versatile toolkit.<br>
+          <span class="muted">Built through practice.</span>
+        </h2>
+      </div>
+
+      <div class="skills-grid">
+        <article class="skill-panel reveal">
+          <span class="panel-index">SKILL SET / 01</span>
+          <h3>Embedded Systems &amp; IoT</h3>
+          <p>
+            Microcontroller development, hardware integration and connected
+            device concepts.
+          </p>
+          <div class="skill-tags">
+            <span>ESP32</span>
+            <span>ESP8266</span>
+            <span>Raspberry Pi</span>
+            <span>Arduino</span>
+            <span>MQTT</span>
+            <span>Blynk</span>
+            <span>BLE</span>
+            <span>NFC</span>
+            <span>Sensors</span>
+            <span>Actuators</span>
+          </div>
+        </article>
+
+        <article class="skill-panel reveal">
+          <span class="panel-index">SKILL SET / 02</span>
+          <h3>Programming &amp; Tools</h3>
+          <p>
+            Coding, prototyping, circuit design and development environments.
+          </p>
+          <div class="skill-tags">
+            <span>C</span>
+            <span>C++</span>
+            <span>Embedded C++</span>
+            <span>Python</span>
+            <span>Arduino IDE</span>
+            <span>PlatformIO</span>
+            <span>VS Code</span>
+            <span>EasyEDA</span>
+            <span>Proteus</span>
+            <span>MATLAB</span>
+            <span>Excel</span>
+          </div>
+        </article>
+
+        <article class="skill-panel reveal">
+          <span class="panel-index">SKILL SET / 03</span>
+          <h3>Customer &amp; Technical Support</h3>
+          <p>
+            Customer communication, sales assistance and structured
+            troubleshooting.
+          </p>
+          <div class="skill-tags">
+            <span>Live Chat</span>
+            <span>Email Support</span>
+            <span>Sales Support</span>
+            <span>Technical Troubleshooting</span>
+            <span>Remote Assistance</span>
+            <span>Product Knowledge</span>
+            <span>Problem Solving</span>
+            <span>Quality Compliance</span>
+          </div>
+        </article>
+
+        <article class="skill-panel reveal">
+          <span class="panel-index">SKILL SET / 04</span>
+          <h3>Digital Media &amp; Content</h3>
+          <p>
+            Technical storytelling, digital campaigns and social media content.
+          </p>
+          <div class="skill-tags">
+            <span>Technical Writing</span>
+            <span>Content Strategy</span>
+            <span>Social Media</span>
+            <span>Product Videos</span>
+            <span>Reels</span>
+            <span>Digital Campaigns</span>
+            <span>Creative Ideation</span>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <!-- PROJECTS -->
+    <section class="content-section section-shell" id="projects">
+      <div class="section-heading reveal">
+        <p class="section-label">04 / SELECTED WORK</p>
+        <h2>
+          Curiosity into<br>
+          <span class="muted">working ideas.</span>
+        </h2>
+        <p class="heading-description">
+          Areas of hands-on exploration across electronics, connected systems
+          and customer-focused technology.
+        </p>
+      </div>
+
+      <div class="project-list">
+        <article class="project-row reveal">
+          <span class="project-id">P.001</span>
+          <div>
+            <h3>ESP32 &amp; IoT Prototyping</h3>
+            <p>
+              Exploring microcontrollers, sensors, actuators and wireless
+              communication for connected-device projects.
+            </p>
+            <div class="career-tags">
+              <span>ESP32</span>
+              <span>Sensors</span>
+              <span>IoT</span>
+            </div>
+          </div>
+          <span class="project-symbol">↗</span>
+        </article>
+
+        <article class="project-row reveal">
+          <span class="project-id">P.002</span>
+          <div>
+            <h3>Connected Systems &amp; MQTT</h3>
+            <p>
+              Exploring device messaging and IoT platforms such as MQTT and
+              Blynk to connect hardware with digital interfaces.
+            </p>
+            <div class="career-tags">
+              <span>MQTT</span>
+              <span>Blynk</span>
+              <span>Connectivity</span>
+            </div>
+          </div>
+          <span class="project-symbol">↗</span>
+        </article>
+
+        <article class="project-row reveal">
+          <span class="project-id">P.003</span>
+          <div>
+            <h3>Technical Content &amp; Digital Media</h3>
+            <p>
+              Translating technical topics and product information into
+              blogs, demonstrations, videos and social media content.
+            </p>
+            <div class="career-tags">
+              <span>Technical Writing</span>
+              <span>Video</span>
+              <span>Content Creation</span>
+            </div>
+          </div>
+          <span class="project-symbol">↗</span>
+        </article>
+
+        <article class="project-row reveal">
+          <span class="project-id">P.004</span>
+          <div>
+            <h3>Customer Troubleshooting</h3>
+            <p>
+              Applying structured questioning, clear communication and
+              step-by-step guidance to help customers work through problems.
+            </p>
+            <div class="career-tags">
+              <span>Diagnosis</span>
+              <span>Communication</span>
+              <span>Support</span>
+            </div>
+          </div>
+          <span class="project-symbol">↗</span>
+        </article>
+      </div>
+    </section>
+
+    <!-- EDUCATION -->
+    <section class="content-section section-shell" id="education">
+      <div class="section-heading reveal">
+        <p class="section-label">05 / EDUCATION</p>
+        <h2>
+          Learning the<br>
+          <span class="muted">fundamentals.</span>
+        </h2>
+      </div>
+
+      <article class="education-card reveal">
+        <span class="education-year">2023</span>
+
+        <div>
+          <h3>BSc — Physics, Mathematics &amp; Electronics</h3>
+          <p>Kristu Jayanti College, Bengaluru</p>
+          <span class="education-institution">
+            Academic background in scientific and electronic fundamentals.
+          </span>
+        </div>
+
+        <span class="education-mark">↗</span>
       </article>
-
-    </div>
-
-    <p class="career-note">
-      *Confirm the exact TIF LABS dates before publishing.
-    </p>
-
-  </div>
-</section>
-
-
-        <div class="languages-line reveal">
-          <span class="eyebrow">LANGUAGES</span>
-          <p>English <i>/</i> Kannada <i>/</i> Tamil <i>/</i> Hindi</p>
-        </div>
-      </div>
     </section>
 
-    <section class="section-shell section-padding" id="beyond">
-      <div class="beyond-grid">
-        <div class="section-heading reveal">
-          <p class="eyebrow">05 / BEYOND THE SCREEN</p>
-          <h2>Always exploring.<br><span class="muted">Always learning.</span></h2>
-        </div>
-        <div class="beyond-content reveal">
-          <p>
-            Outside my day-to-day work, I enjoy exploring electronics,
-            building prototypes, creating visual stories, and learning
-            through hands-on experimentation.
-          </p>
-          <div class="interest-list">
-            <span>Electronics & Robotics</span>
-            <span>DIY Projects</span>
-            <span>Photography & Video</span>
-            <span>Technical Learning</span>
-            <span>Model Making</span>
-            <span>NCC</span>
-          </div>
-          <div class="ncc-note">
-            <span class="ncc-emblem">✳</span>
-            <div><strong>NCC — C Certificate</strong><p>Leadership, discipline, and teamwork.</p></div>
-          </div>
-        </div>
-      </div>
-    </section>
-
+    <!-- CONTACT -->
     <section class="contact-section" id="contact">
-      <div class="section-shell contact-inner">
+      <div class="section-shell contact-layout">
         <div class="contact-copy reveal">
-          <p class="eyebrow">LET'S CONNECT</p>
-          <h2>Have an idea?<br><span class="outline-text">Let's build.</span></h2>
+          <p class="section-label">06 / LET'S CONNECT</p>
+
+          <h2>
+            Have an idea?<br>
+            <span>Let's build.</span>
+          </h2>
+
           <p>
-            Interested in embedded systems, technical support, or creative
-            collaboration? Get in touch.
+            Interested in embedded systems, technical support, technology
+            projects or creative collaboration? Get in touch.
           </p>
-          <a class="button button-primary" href="mailto:b.lohithvishal@gmail.com">
+
+          <a
+            class="button button-primary"
+            href="mailto:b.lohithvishal@gmail.com"
+          >
             Email me <span>↗</span>
           </a>
         </div>
 
-        <div class="contact-links reveal">
-          <a class="contact-link" href="mailto:b.lohithvishal@gmail.com">
-            <span class="contact-link-label">EMAIL</span>
-            <span class="contact-link-value">b.lohithvishal@gmail.com</span>
-            <span class="contact-link-arrow">↗</span>
+        <div class="contact-details reveal">
+          <a
+            class="contact-link"
+            href="mailto:b.lohithvishal@gmail.com"
+          >
+            <span>
+              <small>EMAIL</small>
+              <b>b.lohithvishal@gmail.com</b>
+            </span>
+            <span class="contact-arrow">↗</span>
           </a>
-          <a class="contact-link" href="https://www.linkedin.com/in/lohith-vishal-1394701b3/" target="_blank" rel="noopener noreferrer">
-            <span class="contact-link-label">LINKEDIN</span>
-            <span class="contact-link-value">Connect professionally</span>
-            <span class="contact-link-arrow">↗</span>
-          </a>
-          <a class="contact-link" href="tel:+918553377448">
-  <span class="contact-link-label">PHONE</span>
-  <span class="contact-link-value">+91 85533 377448</span>
-  <span class="contact-link-arrow">↗</span>
-</a>
 
-<a class="contact-link"
-   href="https://wa.me/918553377448"
-   target="_blank"
-   rel="noopener noreferrer">
-  <span class="contact-link-label">WHATSAPP</span>
-  <span class="contact-link-value">WhatsApp Me</span>
-  <span class="contact-link-arrow">↗</span>
-</a>
+          <a
+            class="contact-link"
+            href="https://www.linkedin.com/in/lohith-vishal-1394701b3/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <span>
+              <small>LINKEDIN</small>
+              <b>Connect professionally</b>
+            </span>
+            <span class="contact-arrow">↗</span>
+          </a>
+
+          <!-- Replace 91XXXXXXXXXX with your WhatsApp number -->
+          <a
+            class="contact-link"
+            href="https://wa.me/91XXXXXXXXXX"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <span>
+              <small>WHATSAPP</small>
+              <b>Let's start a conversation</b>
+            </span>
+            <span class="contact-arrow">↗</span>
+          </a>
+
           <div class="contact-location">
-            <span class="status-dot"></span> BASED IN BENGALURU, INDIA
+            <span class="live-dot"></span>
+            BASED IN BENGALURU, INDIA
           </div>
         </div>
       </div>
     </section>
   </main>
 
-  <footer class="site-footer">
-    <a class="brand" href="#home"><span class="brand-mark">LV</span><span>LOHITH<span class="accent">.</span></span></a>
-    <p>Designed with curiosity. Built with purpose.</p>
-    <span class="mono">© <span id="year"></span> LOHITH VISHAL</span>
-    <a class="back-top" href="#home" aria-label="Back to top">↑</a>
+  <!-- FOOTER -->
+  <footer class="site-footer section-shell">
+    <a class="footer-brand" href="#home">LV<span>®</span></a>
+    <span>BUILDING SOLUTIONS. SOLVING PROBLEMS.</span>
+    <span>© <span id="year">2026</span> LOHITH VISHAL</span>
+    <a href="#home">BACK TO TOP ↑</a>
   </footer>
 
+  <!-- Keep your existing JavaScript unchanged -->
   <script src="script.js"></script>
 </body>
 </html>
