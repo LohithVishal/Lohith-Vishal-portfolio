@@ -4,10 +4,9 @@ document.addEventListener("DOMContentLoaded", () => {
   if (year) {
     year.textContent = new Date().getFullYear();
   }
-
-  // Mobile navigation: matches the HTML class "main-nav".
-  const menuToggle = document.getElementById("menuToggle");
-  const mainNav = document.getElementById("mainNav");
+  // Mobile navigation.
+const menuToggle = document.querySelector(".menu-toggle");
+const mainNav = document.querySelector(".nav");
 
   if (menuToggle && mainNav) {
     menuToggle.addEventListener("click", () => {
