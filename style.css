@@ -481,3 +481,14 @@ body::after {
     transform: none;
   }
 }
+.profile-photo {
+  width: 125px;
+  height: 125px;
+  object-fit: cover;
+  object-position: center;
+  border-radius: 50%;
+  border: 2px solid var(--lime);
+  display: block;
+  margin-bottom: 25px;
+  box-shadow: 0 0 25px rgba(196, 255, 77, 0.15);
+}
